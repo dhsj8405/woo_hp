@@ -30,6 +30,12 @@ ol{
   margin:0;
   padding:20px;
 }
+#hp_category{
+  color:gray;
+}
+#hp_category.category_effect:hover{
+  text-decoration: underline;
+}
 body{
   margin:0;
 }
@@ -49,9 +55,9 @@ body{
     display:block;
     text-align: center;
   }
-  #home_grid{
+  /* #home_grid{
     display:block;
-  }
+  } */
   ol{
     border-right:none;
   }
