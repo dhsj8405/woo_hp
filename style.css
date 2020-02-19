@@ -16,26 +16,38 @@ a{                              /* a{}:선택자(selector) //스타일태그안�
   color:gray;
 } */
               /* 우선순위 id 선택자 > class선택자> 클래스 선택자 : a  */
-              /* 동일한 선택자에선 맨밑의 선택자가 우선순위 제일 높다 */
+              /*side_menu 동일한 선택자에선 맨밑의 선택자가 우선순위 제일 높다 */
 h1{
   font-size: 45px;
   text-align: center;
   margin:0;
   padding:50px;
 }
-#hp_title{
-  border-bottom :1px solid gray;
+#top_menu{
+  background-color: #ada1a1;}
+#top_menu{
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
 }
-ol{
+nav li{
+  display: inline; padding: 15px;
+}
+nav ul{
+  padding-right:70px;
+}
+nav{
+  overflow: hidden;  font-family : '맑은고딕'; text-align: right;
+}
+#grid ol{
   border-right:1px solid gray;
   width:100px;
   margin:0;
-  padding:20px;
+  padding:35px;
 }
-#hp_category{
+#side_menu{
   color:gray;
 }
-#hp_category.category_effect:hover{
+.menu_effect:hover{
   text-decoration: underline;
 }
 body{
@@ -46,13 +58,15 @@ body{
   display:grid;
   grid-template-columns: 150px 1fr;
 }
-#grid ol{
   /* 부모가 grid인 ol */
-  padding-left:33px;
-}
+/* #grid ol{
+  padding:35px;
+} */
 #grid #article{
-  padding:25px;
+  padding:35px;
+  padding-left:60px;
 }
+
 @media(max-width:800px){
   #grid{
     display:block;
