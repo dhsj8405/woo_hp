@@ -17,6 +17,7 @@ a{                              /* a{}:선택자(selector) //스타일태그안�
 } */
               /* 우선순위 id 선택자 > class선택자> 클래스 선택자 : a  */
               /*side_menu 동일한 선택자에선 맨밑의 선택자가 우선순위 제일 높다 */
+
 h1{
   font-size: 45px;
   text-align: center;
@@ -24,10 +25,11 @@ h1{
   padding:50px;
 }
 #top_menu{
-  background-color: #ada1a1;}
+  background-color: #ada1a1;
+}
 #top_menu{
-  border-top: 1px solid gray;
-  border-bottom: 1px solid gray;
+  /* border-top: 1px solid gray;
+  border-bottom: 1px solid gray; */
 }
 nav li{
   display: inline; padding: 15px;
@@ -38,11 +40,15 @@ nav ul{
 nav{
   overflow: hidden;  font-family : '맑은고딕'; text-align: right;
 }
-#grid ol{
-  border-right:1px solid gray;
+#grid ul{
+  border-right:1px solid #d4d4d4;
   width:100px;
   margin:0;
   padding:35px;
+  list-style: none;
+}
+#grid li{
+  padding-bottom: 7px;
 }
 #side_menu{
   color:gray;
@@ -51,8 +57,10 @@ nav{
   text-decoration: underline;
 }
 body{
-  margin:60px;
-  border:1px solid gray;
+  margin:0px;
+
+  /* background-color: #dedcdc; */
+  /* border:1px solid gray; */
 }
 #grid{
   display:grid;
@@ -64,9 +72,15 @@ body{
 } */
 #grid #article{
   padding:35px;
-  padding-left:60px;
+  padding-left:80px;
 }
-
+footer{
+  color:#d4d4d4;
+  /* border-top:1px solid gray; */
+  background-color: #636363;
+  padding:40px;
+  padding-left:40px;
+}
 @media(max-width:800px){
   #grid{
     display:block;
@@ -75,7 +89,7 @@ body{
   /* #home_grid{
     display:block;
   } */
-  ol{
+  #grid ul{
     border-right:none;
   }
   h1{
